@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap" rel="stylesheet">
+    <title>Card</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const flipCard = document.querySelector(".flip-card");
+
+            flipCard.style.transition = "transform 1s ease-in-out";
+    
+        flipCard.addEventListener("click", function () {
+            this.classList.toggle("flipped");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="flip-card">
+        <div class="flip-card-front">
+            <h1 class="front-header">Open This Card!!</h1>
+            <div class="gif">
+                <img src="assets/bugcat.gif" class="bugcat">
+            </div>
+        </div>
+        <div class="flip-card-back">
+            <h1 class="back-header">Dear Abby,</h1>
+            <p class="back-text">Hi, Abby! I just want to say that, I wish you good luck on your pre-lims exam! I just want you to know that I am always rooting for you, I know you can, and always will!</p>
+            <p class="back-text-2">Lastly, I just wanna say that I love youuuu so much, and I will choose you at any circumstance no matter what, and cheers for our 10th month, once again, I miss you as always, and I love you!</p>
+        </div>
+    </div>
+</body>
+</html>
